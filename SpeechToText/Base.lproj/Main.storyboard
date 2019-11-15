@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhS-68-bT8">
+                                <rect key="frame" x="145" y="425" width="125" height="53"/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="GoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mJy-Rk-g3T"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4J-xk-53v">
+                                <rect key="frame" x="20" y="69" width="374" height="149"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnS-G3-Mlj">
+                                <rect key="frame" x="20" y="243" width="374" height="149"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vN-XC-Tsu">
+                                <rect key="frame" x="145" y="486" width="143" height="41"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="StopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fGa-bJ-MnY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CnS-G3-Mlj" firstAttribute="top" secondItem="q4J-xk-53v" secondAttribute="bottom" constant="25" id="0cP-Hu-duh"/>
+                            <constraint firstItem="5vN-XC-Tsu" firstAttribute="top" secondItem="MhS-68-bT8" secondAttribute="bottom" constant="8" id="7KC-zT-G0i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5vN-XC-Tsu" secondAttribute="trailing" constant="126" id="7dh-UC-2rd"/>
+                            <constraint firstItem="MhS-68-bT8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="ART-Fr-XEf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5vN-XC-Tsu" secondAttribute="bottom" constant="209" id="EyR-pi-dKd"/>
+                            <constraint firstItem="MhS-68-bT8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="405" id="J1K-g0-pXP"/>
+                            <constraint firstItem="q4J-xk-53v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="R0x-1P-QSI"/>
+                            <constraint firstItem="CnS-G3-Mlj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RHo-VE-Zji"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MhS-68-bT8" secondAttribute="trailing" constant="144" id="Skx-5V-q5b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q4J-xk-53v" secondAttribute="trailing" constant="20" id="Uc7-Cv-a0f"/>
+                            <constraint firstItem="MhS-68-bT8" firstAttribute="top" secondItem="CnS-G3-Mlj" secondAttribute="bottom" constant="33" id="cNA-mb-l4J"/>
+                            <constraint firstItem="5vN-XC-Tsu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="e8h-qt-Q9N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CnS-G3-Mlj" secondAttribute="trailing" constant="20" id="re8-YD-wRD"/>
+                            <constraint firstItem="q4J-xk-53v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rxS-JC-QTj"/>
+                            <constraint firstItem="CnS-G3-Mlj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="223" id="tXR-2T-y8Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MhS-68-bT8" secondAttribute="bottom" constant="258" id="xk9-MG-HwX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="commandText" destination="CnS-G3-Mlj" id="WAR-o8-Mnb"/>
+                        <outlet property="textView" destination="q4J-xk-53v" id="UNE-nc-dJh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="112.50000000000001"/>
+        </scene>
+    </scenes>
+</document>
