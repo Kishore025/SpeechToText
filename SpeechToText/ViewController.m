@@ -70,6 +70,7 @@
     NSError *error;
     AVAudioSession *audioSession = [AVAudioSession sharedInstance];
     [audioSession setCategory:AVAudioSessionCategoryRecord error:&error];
+    [audioSession setMode:AVAudioSessionModeMeasurement error:&error];
     [audioSession setActive:YES withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:&error];
     
     // Starts a recognition process, in the block it logs the input or stops the audio
